@@ -1,5 +1,7 @@
 <Solution>
   <Folder Name="/Docs/" />
   <Folder Name="/Specifications/" />
-  <Folder Name="/Src/" />
+  <Folder Name="/Src/">
+    <Project Path="Src/Overseer.Api/Overseer.Api.csproj" />
+  </Folder>
 </Solution>
