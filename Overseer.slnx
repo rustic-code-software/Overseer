@@ -4,4 +4,18 @@
   <Folder Name="/Src/">
     <Project Path="Src/Overseer.Api/Overseer.Api.csproj" />
   </Folder>
+  <Folder Name="/Src/Microservices/" />
+  <Folder Name="/Src/Microservices/Account management/">
+    <Project Path="Src/Overseer.Accounts.Api/Overseer.Accounts.Api.csproj" Id="707de230-150d-4df0-b2d4-3469b1fc64df" />
+    <Project Path="Src/Overseer.Accounts.Application.Services/Overseer.Accounts.Application.Services.csproj" Id="a07cb7d2-42e1-4ddf-b638-996d3fe88557" />
+    <Project Path="Src/Overseer.Accounts.Application/Overseer.Accounts.Application.csproj" Id="d2f422dd-dce7-43f6-a4f8-2a0859009773" />
+    <Project Path="Src/Overseer.Accounts.Domain.Services/Overseer.Accounts.Domain.Services.csproj" Id="c55a0d67-9879-459e-87aa-54694ba702ca" />
+    <Project Path="Src/Overseer.Accounts.Domain/Overseer.Accounts.Domain.csproj" Id="8acddb1a-1824-4634-a4f5-1d14e58cdc25" />
+    <Project Path="Src/Overseer.Accounts.Infrastructure.Queues/Overseer.Accounts.Infrastructure.Queues.csproj" Id="e2c006e9-7b3d-42f1-82aa-71562ef5a1e6" />
+    <Project Path="Src/Overseer.Accounts.Infrastructure.SqlServer/Overseer.Accounts.Infrastructure.SqlServer.csproj" Id="1a1a783b-8da5-4ffd-8b9c-1627a995c87a" />
+  </Folder>
+  <Folder Name="/Src/Microservices/Contract management/" />
+  <Folder Name="/Src/Microservices/Invoice management/" />
+  <Folder Name="/Src/Microservices/Order management/" />
+  <Folder Name="/Src/Microservices/Timesheet management/" />
 </Solution>
