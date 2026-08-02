@@ -1,6 +1,11 @@
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services
+    .AddApplicationServices()
+    .AddDomainServices()
+    .AddInfrastructureSqlServerServices()
+    .AddInfrastureQueuesServices();
 
 builder.Services.AddControllers();
 

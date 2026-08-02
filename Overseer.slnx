@@ -2,6 +2,8 @@
   <Folder Name="/Docs/" />
   <Folder Name="/Specifications/" />
   <Folder Name="/Src/">
+    <Project Path="Src/Overseer.Abstractions.Tests/Overseer.Abstractions.Tests.csproj" Id="0adcce73-50b1-40de-90c5-b26248dfc2a7" />
+    <Project Path="Src/Overseer.Abstractions/Overseer.Abstractions.csproj" Id="2ab140a2-f3c5-480e-8d02-57d25d5d7d05" />
     <Project Path="Src/Overseer.Api/Overseer.Api.csproj" />
   </Folder>
   <Folder Name="/Src/Microservices/" />
