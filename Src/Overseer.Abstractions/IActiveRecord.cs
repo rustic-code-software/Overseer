@@ -20,12 +20,12 @@
         /// <param name="id">The identifier of the model to retrieve.</param>
         /// <param name="cancellationToken">The cancellation token.</param>
         /// <returns>The asynchronous task representing the operation.</returns>
-        Task GetByIdAsync(TId id, CancellationToken cancellationToken = default);
+        Task<Result<Unit>> GetByIdAsync(TId id, CancellationToken cancellationToken = default);
         /// <summary>
         /// Asynchronously saves the model to the data store.
         /// </summary>
         /// <param name="cancellationToken">The cancellation token.</param>
         /// <returns>The asynchronous task representing the operation.</returns>
-        Task SaveAsync(CancellationToken cancellationToken = default);
+        Task<Result<Unit>> SaveAsync(CancellationToken cancellationToken = default);
     }
 }
