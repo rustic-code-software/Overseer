@@ -10,7 +10,7 @@ namespace Overseer.Abstractions
 
         private Result() { }
 
-        public static Result<TValue> Success(TValue value) =>
+        public static Result<TValue> Succeed(TValue value) =>
             new()
             {
                 Succeeded = true,
@@ -34,7 +34,7 @@ namespace Overseer.Abstractions
 
     public static class Result
     {
-        public static Result<TValue> Success<TValue>(TValue value) => Result<TValue>.Success(value);
+        public static Result<TValue> Succeed<TValue>(TValue value) => Result<TValue>.Succeed(value);
 
         public static Result<TValue> Fail<TValue>(ValidationResult error) => Result<TValue>.Fail(error);
     }

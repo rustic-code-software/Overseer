@@ -8,7 +8,7 @@ namespace Overseer.Abstractions.Tests
         [Fact]
         public void Success_ReturnsEncapsulatedResult()
         {
-            var result = Result<string>.Success("test");
+            var result = Result<string>.Succeed("test");
 
             result.Should().NotBeNull();
             result.Succeeded.Should().BeTrue();
@@ -17,7 +17,7 @@ namespace Overseer.Abstractions.Tests
         [Fact]
         public void StaticSuccess_ReturnsEncapsulatedResult()
         {
-            var result = Result.Success("test");
+            var result = Result.Succeed("test");
 
             result.Should().NotBeNull();
             result.Succeeded.Should().BeTrue();
