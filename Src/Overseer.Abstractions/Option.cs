@@ -1,6 +1,3 @@
-using System;
-using System.Collections.Generic;
-
 namespace Overseer.Abstractions
 {
     public class Option<T> : IEquatable<Option<T>>

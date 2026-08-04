@@ -11,7 +11,8 @@
         /// <summary>
         /// Gets the model associated with this active record.
         /// </summary>
-        TModel Model { get; }
+        /// <remarks>None if no model has been retrieved.</remarks>
+        Option<TModel> Model { get; }
 
         /// <summary>
         /// Asynchronously retrieves the model by its identifier.
