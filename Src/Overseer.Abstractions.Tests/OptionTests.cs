@@ -17,6 +17,71 @@ namespace Overseer.Abstractions.Tests
         }
 
         [Fact]
+        public void Some_Equals_SameValue()
+        {
+            var a = Option.Some("x");
+            var b = Option.Some("x");
+
+            a.Equals(b).Should().BeTrue();
+            (a == b).Should().BeTrue();
+            a.GetHashCode().Should().Be(b.GetHashCode());
+        }
+
+        [Fact]
+        public void Some_NotEquals_DifferentValue()
+        {
+            var a = Option.Some("x");
+            var b = Option.Some("y");
+
+            a.Equals(b).Should().BeFalse();
+            (a == b).Should().BeFalse();
+            (a != b).Should().BeTrue();
+        }
+
+        [Fact]
+        public void None_Equals_None()
+        {
+            var a = Option.None<string>();
+            var b = Option.None<string>();
+
+            a.Equals(b).Should().BeTrue();
+            (a == b).Should().BeTrue();
+            a.GetHashCode().Should().Be(b.GetHashCode());
+        }
+
+        [Fact]
+        public void None_Equals_Some()
+        {
+            var a = Option.None<string>();
+            var b = Option.Some("x");
+
+            a.Equals(b).Should().BeFalse();
+            (a == b).Should().BeFalse();
+            (a != b).Should().BeTrue();
+        }
+
+        [Fact]
+        public void Some_NotEquals_None()
+        {
+            var some = Option.Some("x");
+            var none = Option.None<string>();
+
+            some.Equals(none).Should().BeFalse();
+            (some == none).Should().BeFalse();
+            (some != none).Should().BeTrue();
+        }
+
+        [Fact]
+        public void Equals_Null_ReturnsFalse()
+        {
+            var some = Option.Some(1);
+            var none = Option.None<int>();
+
+            some.Equals(null).Should().BeFalse();
+            none.Equals(null).Should().BeFalse();
+        }
+
+        [Fact]
         public void None_HasNoValue()
         {
             var opt = Option.None<string>();
