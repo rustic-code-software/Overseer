@@ -15,6 +15,7 @@
     <Project Path="Src/Overseer.Accounts.Domain/Overseer.Accounts.Domain.csproj" Id="8acddb1a-1824-4634-a4f5-1d14e58cdc25" />
     <Project Path="Src/Overseer.Accounts.Infrastructure.Queues/Overseer.Accounts.Infrastructure.Queues.csproj" Id="e2c006e9-7b3d-42f1-82aa-71562ef5a1e6" />
     <Project Path="Src/Overseer.Accounts.Infrastructure.SqlServer/Overseer.Accounts.Infrastructure.SqlServer.csproj" Id="1a1a783b-8da5-4ffd-8b9c-1627a995c87a" />
+    <Project Path="Src/Overseer.Accounts.Specifications/Overseer.Accounts.Specifications.csproj" Id="e20a5dc0-6ddf-44bf-8b44-5f5a0420fc7b" />
   </Folder>
   <Folder Name="/Src/Microservices/Contract management/" />
   <Folder Name="/Src/Microservices/Invoice management/" />
